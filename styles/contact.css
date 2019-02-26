@@ -912,34 +912,35 @@
 
 @-webkit-keyframes burst {
   0% {
-    opacity: .6;
+    opacity: .9;
   }
 
   50% {
-    -webkit-transform: scale(1.8);
-    transform: scale(1.8);
-    opacity: 0;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: .2;
   }
 
   100% {
-    opacity: 0;
+    opacity: 5;
   }
 }
 
 @keyframes burst {
   0% {
-    opacity: .6;
+    opacity: .9;
   }
 
   50% {
-    -webkit-transform: scale(1.8);
-    -ms-transform: scale(1.8);
-    transform: scale(1.8);
-    opacity: 0;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    opacity: .2;
   }
 
   100% {
-    opacity: 0;
+    opacity: 5;
   }
 }
 
@@ -1009,6 +1010,11 @@ font-size: 24px;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 
+}
+
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1117,6 +1123,28 @@ main{
 
 
 
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  opacity:0.5;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 
 
 
