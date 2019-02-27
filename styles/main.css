@@ -5,104 +5,15 @@
 
 [Table of Contents]
 
-1. Fonts
-2. Important
-3. Body and some general stuff
-4. Header
-5. Menu
-6. Home
-7. 
-8. 
-9. 
-10. 
-11. 
-
-
+1.   Fonts
+2.   BUTTON GLOW EFFECT 
+3.   SLIDER
+4.   
+5.   SCRIPTS
 ******************************/
 
-
 /***********
 1. Fonts
-***********/
-@font-face {
-  font-family: 'nite-key';
-  src:  url('fonts/nite-key.eot?rsdqfx');
-  src:  url('fonts/nite-key.eot?rsdqfx#iefix') format('embedded-opentype'),
-    url('fonts/nite-key.ttf?rsdqfx') format('truetype'),
-    url('fonts/nite-key.woff?rsdqfx') format('woff'),
-    url('fonts/nite-key.svg?rsdqfx#nite-key') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="nite-"], [class*=" nite-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'nite-key' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.nite-key:before {
-  content: "\e901";
-}
-
-
-/***********
-2. Important A  
-***********/
-
-.btnspecial {
-  background-color: #004A7F;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  border: none;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Arial;
-  font-size: 20px;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-animation: glowing 1500ms infinite;
-  -moz-animation: glowing 1500ms infinite;
-  -o-animation: glowing 1500ms infinite;
-  animation: glowing 1500ms infinite;
-}
-@-webkit-keyframes glowing {
-  0% { background-color: #0365cd; -webkit-box-shadow: 0 0 3px #0365cd; }
-  50% { background-color: #007bff; -webkit-box-shadow: 0 0 5px #007bff; }
-  100% { background-color: #0365cd; -webkit-box-shadow: 0 0 3px #0365cd; }
-}
-
-@-moz-keyframes glowing {
-  0% { background-color: #0365cd; -moz-box-shadow: 0 0 3px #0365cd; }
-  50% { background-color: #007bff; -moz-box-shadow: 0 0 5px #007bff; }
-  100% { background-color: #0365cd; -moz-box-shadow: 0 0 3px #0365cd; }
-}
-
-@-o-keyframes glowing {
-  0% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
-  50% { background-color: #007bff; box-shadow: 0 0 5px #007bff; }
-  100% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
-}
-
-@keyframes glowing {
-  0% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
-  50% { background-color: #007bff; box-shadow: 0 0 5px #007bff; }
-  100% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
-}
-
-/***********
-2. Important B
 ***********/
 
 /*!
@@ -110,6 +21,7 @@
  * https://github.com/l-lin/font-awesome-animation
  * License: MIT
  */
+
 @-webkit-keyframes wrench {
   0% {
     -webkit-transform: rotate(-12deg);
@@ -993,8 +905,95 @@
 
 
 
+
+
+<!-- Custome Font -->
+
+@font-face {
+  font-family: 'nite-key';
+  src:  url('fonts/nite-key.eot?rsdqfx');
+  src:  url('fonts/nite-key.eot?rsdqfx#iefix') format('embedded-opentype'),
+    url('fonts/nite-key.ttf?rsdqfx') format('truetype'),
+    url('fonts/nite-key.woff?rsdqfx') format('woff'),
+    url('fonts/nite-key.svg?rsdqfx#nite-key') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="nite-"], [class*=" nite-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'nite-key' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.nite-key:before {
+  content: "\e901";
+}
+
+
+
+
+
+
 /***********
-2. Important C
+2. BUTTON GLOW EFFECT
+***********/
+
+.btnspecial {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #0365cd; -webkit-box-shadow: 0 0 3px #0365cd; }
+  50% { background-color: #007bff; -webkit-box-shadow: 0 0 5px #007bff; }
+  100% { background-color: #0365cd; -webkit-box-shadow: 0 0 3px #0365cd; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #0365cd; -moz-box-shadow: 0 0 3px #0365cd; }
+  50% { background-color: #007bff; -moz-box-shadow: 0 0 5px #007bff; }
+  100% { background-color: #0365cd; -moz-box-shadow: 0 0 3px #0365cd; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
+  50% { background-color: #007bff; box-shadow: 0 0 5px #007bff; }
+  100% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
+}
+
+@keyframes glowing {
+  0% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
+  50% { background-color: #007bff; box-shadow: 0 0 5px #007bff; }
+  100% { background-color: #0365cd; box-shadow: 0 0 3px #0365cd; }
+}
+
+
+
+/***********
+3. SLIDER
 ***********/
 
 #slides {
@@ -1347,7 +1346,7 @@ th {
 
 
 /***********
-3. Body and some general stuff
+3. Body and and general stuff
 ***********/
 *
 {
@@ -1464,9 +1463,11 @@ main{
 
 
 
+/***********
+5. SCRIPTS
+***********/
 
-
-
+<!-- Back to top Effect -->
 #myBtn {
   display: none;
   position: fixed;

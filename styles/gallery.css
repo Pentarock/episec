@@ -2,41 +2,17 @@
 /* CSS Document */
 
 /******************************
-
 [Table of Contents]
 
-1. Fonts
-2. Important
-3. Body and some general stuff
-4. Header
-5. Menu
-6. Home
-7. 
-8. 
-9. 
-10. 
-11. 
-
-
+1.   Fonts
+2.   BUTTON GLOW EFFECT 
+3.   OWL CAROUSEL EFFECT
+4. 
+5.   SCRIPTS
 ******************************/
 
-
-
-
-
-
 /***********
 1. Fonts
-***********/
-
-
-/***********
-2. Important A  
-***********/
-
-
-/***********
-2. Important B
 ***********/
 
 /*!
@@ -924,8 +900,9 @@
 
 
 /***********
-2. Important C
+2. BUTTON GLOW EFFECT
 ***********/
+
 .btnspecial {
   background-color: #004A7F;
   -webkit-border-radius: 10px;
@@ -971,21 +948,26 @@
 
 
 /***********
-2. Important EVC2df 
-
-
-
+3. OWL CAROUSEL EFFECT
 ***********/
 
-
-
-
-
-.Nur_pri{
-  
-    
+#owl-new .item img{
+    display: block;
+    width: 368px;
+    height: 236px;
+}
+#owl-demo .item{
+    margin: 3px;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
+/***************
+2.B PHOTO GALLERY
+***************/
 
 .gallery {
 -webkit-column-count: 3;
@@ -1021,36 +1003,17 @@ padding-right: 1.1rem;
 }
 
 
-/***********
-2. Important E
-***********/
-
-    #owl-new .item img{
-        display: block;
-        width: 368px;
-        height: 236px;
-    }
 
 /***********
-2. IMPORTANT E
+3. Body and general stuff
 ***********/
 
 
- #owl-demo .item{
-      margin: 3px;
-    }
-    #owl-demo .item img{
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
-/***********
-3. Body and some general stuff
-***********/
 html {
   scroll-behavior: smooth;
 }
+
+
 
 body {
      min-height: 1,200px;
@@ -1064,13 +1027,15 @@ body {
 
 #wrapper{
 	 background-color: #ffffff;
-	
+	 box-shadow: 0 0 10px #000;
 }
+
 
 .container{
 	
 
 }
+
 
 .banner{
 	
@@ -1088,13 +1053,9 @@ body {
 	background-color: #6d85e1;
 }
 
-
-
-
 .active{
 	background-color:#a7bdde !important;
 }
-
 
 main{
 	 padding-top: 40px;
@@ -1104,10 +1065,11 @@ main{
 
 
 
+/***********
+5. SCRIPTS
+***********/
 
-
-
-
+<!-- Go up effect -->
 #myBtn {
   display: none;
   position: fixed;

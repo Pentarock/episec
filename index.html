@@ -18,7 +18,11 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-</head>
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="engine0/style.css" />
+	<script type="text/javascript" src="engine0/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section --></head>
 	
 
 <body>
@@ -40,28 +44,28 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="nav nav-tabs navbar-nav navbar-logo mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.htm">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nursery</a>
+            <a class="nav-link" href="nursery.html">Nursery</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Primary</a>
+            <a class="nav-link" href="primary.html">Primary</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Secondary</a>
+            <a class="nav-link" href="secondary.html">Secondary</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="#">Admission</a>
+            <a class="nav-link" href="admision.html">Admission</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="gallery.htm">Gallery</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
 		  <li class="nav-item">
-            <a class="nav-link" href="contact.htm">Contact</a>
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
         
@@ -340,7 +344,7 @@ We know we can succeed.
       
 	<div class="row">
               
-      <div class="col-md-7 mb-4">
+      <div class="col-md-8 mb-4">
         <div class="container">
             <h2><font face = "Comic sans MS"  style="color: #3bc552;font-weight: bold;font-size:30px;">VIDEO SLIDESHOW</font>&ensp;<i class="fa fa-youtube-play animated faa-pulse" style="color:red;" aria-hidden="true"></i></h2>
   <p>School graduation ceremony</p>
@@ -349,16 +353,28 @@ We know we can succeed.
   </div>
 </div>
       </div>
-      <div class="col-md-5" style="min-height: 600px;">
+      <div class="col-md-4">
           <h2><font face = "Comic sans MS"  style="color: #3bc552;font-weight: bold;font-size:30px;">SCHOOL MAGAZINE</font></h2>
           
-
         <p>Yearly magazine last updated on 29 December 2018&ensp;<i class="fa fa-picture-o" style="color:blueviolet;" aria-hidden="true"></i>
         </p>
-    <div class="fadeImg">
-    	<img src="images/magazine/1.jpg">
-    	<img style="display:none;" src="images/magazine/2.jpg">
-    </div>
+        <div>
+	<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+	<div id="wowslider-container0">
+	<div class="ws_images"><ul>
+		<li><img src="data0/images/1.jpg" alt="slider responsive" title="" id="wows0_0"/></li>
+		<li><img src="data0/images/2.jpg" alt="" title="" id="wows0_1"/></li>
+	</ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">angular carousel</a> by WOWSlider.com v7.7</div>
+	<div class="ws_shadow"></div>
+	</div>	
+	<script type="text/javascript" src="engine0/wowslider.js"></script>
+	<script type="text/javascript" src="engine0/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+          
+        
+        </div>  
+          
           
       </div>
     </div>
@@ -370,7 +386,6 @@ We know we can succeed.
 </main>
   
 
-  
 <!-- Footer -->
 <footer class="page-footer font-small mdb-color lighten-3 pt-4" style="background-color:#ece8e8;">
 
@@ -433,7 +448,6 @@ We know we can succeed.
             </tr>
         </table>
         
-            
             
         </div>
         <!-- Grid column -->
@@ -563,8 +577,6 @@ We know we can succeed.
         </div>
         <!-- Grid column --> 
           
-            
-          
     </div>
     <!-- Grid row --> 
     </div>
@@ -573,73 +585,35 @@ We know we can succeed.
   </footer>
   <!-- Footer -->
     
-     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-     
-    </div>
-    
-    
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  </div>
     
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/vendor/popper.min.js"></script>
-     
-    
-    
-    <!-- fade in and out script -->
-    <script type="text/javascript">
-	$next = 1;			// fixed, please do not modfy;
-	$current = 0;		// fixed, please do not modfy;
-	$interval = 5000;	// You can set single picture show time;
-	$fadeTime = 7000;	// You can set fadeing-transition time;
-	$imgNum = 2;		// How many pictures do you have
- 
-	$(document).ready(function(){
-		//NOTE : Div Wrapper should with css: relative;
-		//NOTE : img should with css: absolute;
-		//NOTE : img Width & Height can change by you;
-		$('.fadeImg').css('position','relative');
-		$('.fadeImg img').css({'position':'absolute','width':'95%','height':'450px'});
- 
-		nextFadeIn();
-	});
- 
-	function nextFadeIn(){
-		//make image fade in and fade out at one time, without splash vsual;
-		$('.fadeImg img').eq($current).delay($interval).fadeOut($fadeTime)
-		.end().eq($next).delay($interval).hide().fadeIn($fadeTime, nextFadeIn);
-		    
-		// if You have 5 images, then (eq) range is 0~4 
-		// so we should reset to 0 when value > 4; 
-		if($next < $imgNum-1){ $next++; } else { $next = 0;}
-		if($current < $imgNum-1){ $current++; } else { $current =0; }
-	};
-</script>
-    
-    
+         
       <!-- Back to top script -->
    <script>
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-  } else {
-    document.getElementById("myBtn").style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script> 
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("myBtn").style.display = "block";
+        } else {
+          document.getElementById("myBtn").style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+   </script> 
     
-    
-  
 </body>
 </html>
 
