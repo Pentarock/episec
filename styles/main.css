@@ -1460,14 +1460,22 @@ main{
     
 }
 
+a {
+    text-decoration: none !important;
+    color: #8e8f93;
+    
+}
 
+a:hover {
+  color: #13a651;
+}
 
 
 /***********
 5. SCRIPTS
 ***********/
 
-<!-- Back to top Effect -->
+/***** Go Up Effect ****/
 #myBtn {
   display: none;
   position: fixed;

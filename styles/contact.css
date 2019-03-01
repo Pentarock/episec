@@ -1091,7 +1091,7 @@ main{
 5. SCRIPTS
 ***********/
 
-<!-- Back to top Effect -->
+/***** Go Up Effect ****/
 #myBtn {
   display: none;
   position: fixed;
